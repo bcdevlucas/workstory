@@ -51,6 +51,53 @@ For the purposes of this example we will generate a form using the following con
   ]
 }
 ```
+## Incorporating Dynamic Forms in Your Project
+
+Sample forms module usage:
+```
+...
+import {formBuilder} from './modules/forms/forms';
+...
+
+export const App = (): JSX.Element => {
+  const [formData, setFormData] = useState<{ questions: any[] }>();
+
+  useEffect(() => {
+    (async function getData() {
+      const result = await axios.get<{ questions: Question[] }>('/data/questions.json');
+      setFormData(result.data);
+    })();
+  }, []);
+
+
+  const onSubmit = (values: any) => {
+    console.log(values);
+    return;
+  };
+
+  if (!formData) {
+    return (
+      <Typography>...loading</Typography>
+    );
+  }
+
+  const formGroupComponent = formBuilder(formData);
+
+  return (
+    <div className="App">
+      <Container maxWidth="sm">
+        <Box display="flex" justifyContent="center" alignItems="center" flexDirection="column"
+             style={{minHeight: '300px', border: '1px solid grey'}}>
+          <Box display="flex" flexDirection="column" width="100%">
+            {formGroupComponent({onSubmit, label: 'Submit'})}
+          </Box>
+        </Box>
+      </Container>
+    </div>
+  );
+};
+
+```
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
