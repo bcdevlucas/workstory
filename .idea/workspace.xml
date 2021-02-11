@@ -2,12 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="718a349c-9235-48e3-b61f-b8f5148e4547" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/modules/forms/__test_data__/forms-test-data.ts" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/modules/forms/__tests__/forms.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.eslintcache" beforeDir="false" afterPath="$PROJECT_DIR$/.eslintcache" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/modules/forms/forms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/forms/forms.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/README.md" beforeDir="false" afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -44,7 +41,7 @@
       <recent name="$PROJECT_DIR$/src/modules/forms/__test_data__" />
     </key>
   </component>
-  <component name="RunManager" selected="Jest.Test forms module.Test formsFactory">
+  <component name="RunManager" selected="JavaScript Debug.Web Debug">
     <configuration name="Test forms module.Test formsFactory" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
       <node-interpreter value="project" />
       <node-options value="" />
@@ -144,7 +141,8 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612991144270</updated>
-      <workItem from="1612991146759" duration="8985000" />
+      <workItem from="1612991146759" duration="10512000" />
+      <workItem from="1613044174660" duration="309000" />
     </task>
     <servers />
   </component>
@@ -161,6 +159,7 @@
         </entry>
       </map>
     </option>
+    <option name="oldMeFiltersMigrated" value="true" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/bluecollar_react_base$Test_forms_module_Test_mapFormComponents.info" NAME="Test forms module.Test mapFormComponents Coverage Results" MODIFIED="1613040388670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
