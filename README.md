@@ -1,6 +1,6 @@
 # React + TypeScript Dynamic Forms Example 
 
-This project showcases generating a form dynamically in React using React (with hooks), Formik, and Material UI.
+This project showcases generating a form dynamically using React (with hooks), Formik, and Material UI.
 For the purposes of this example we will generate a form using the following config:
 ```
 {
