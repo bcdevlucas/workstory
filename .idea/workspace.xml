@@ -1,13 +1,24 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="718a349c-9235-48e3-b61f-b8f5148e4547" name="Default Changelist" comment="" />
+    <list default="true" id="718a349c-9235-48e3-b61f-b8f5148e4547" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/src/modules/forms/__test_data__/forms-test-data.ts" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/modules/forms/__tests__/forms.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.test.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.test.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/App.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/App.tsx" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/modules/forms/forms.tsx" beforeDir="false" afterPath="$PROJECT_DIR$/src/modules/forms/forms.tsx" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="ProjectId" id="1oJ41Am9R0ApyT2Wia3abbw3TDN" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -16,17 +27,114 @@
     <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/modules/forms/__tests__" />
     <property name="node.js.detected.package.eslint" value="true" />
     <property name="node.js.path.for.package.eslint" value="project" />
     <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="nodejs.jest.jest_package" value="$PROJECT_DIR$/node_modules/react-scripts" />
     <property name="nodejs_package_manager_path" value="yarn" />
     <property name="ts.external.directory.path" value="$PROJECT_DIR$/node_modules/typescript/lib" />
     <property name="vue.rearranger.settings.migration" value="true" />
   </component>
-  <component name="RunManager">
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules/forms/__tests__" />
+    </key>
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/src/modules/forms/__test_data__" />
+    </key>
+  </component>
+  <component name="RunManager" selected="Jest.Test forms module.Test formsFactory">
+    <configuration name="Test forms module.Test formsFactory" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/modules/forms/__tests__/forms.test.tsx" />
+      <test-names>
+        <test-name value="Test forms module" />
+        <test-name value="Test formsFactory" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test forms module.Test makeFormGroup" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/modules/forms/__tests__/forms.test.tsx" />
+      <test-names>
+        <test-name value="Test forms module" />
+        <test-name value="Test makeFormGroup" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test forms module.Test makeFormGroupKeys" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/modules/forms/__tests__/forms.test.tsx" />
+      <test-names>
+        <test-name value="Test forms module" />
+        <test-name value="Test makeFormGroupKeys" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test forms module.Test mapFormComponents" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/modules/forms/__tests__/forms.test.tsx" />
+      <test-names>
+        <test-name value="Test forms module" />
+        <test-name value="Test mapFormComponents" />
+      </test-names>
+      <method v="2" />
+    </configuration>
+    <configuration name="Test forms module.Test mapQuestions" type="JavaScriptTestRunnerJest" temporary="true" nameIsGenerated="true">
+      <node-interpreter value="project" />
+      <node-options value="" />
+      <jest-package value="$PROJECT_DIR$/node_modules/react-scripts" />
+      <working-dir value="$PROJECT_DIR$" />
+      <envs />
+      <scope-kind value="TEST" />
+      <test-file value="$PROJECT_DIR$/src/modules/forms/__tests__/forms.test.tsx" />
+      <test-names>
+        <test-name value="Test forms module" />
+        <test-name value="Test mapQuestions" />
+      </test-names>
+      <method v="2" />
+    </configuration>
     <configuration name="Web Debug" type="JavascriptDebugType" uri="http://localhost:3000/">
       <method v="2" />
     </configuration>
+    <list>
+      <item itemvalue="JavaScript Debug.Web Debug" />
+      <item itemvalue="Jest.Test forms module.Test makeFormGroup" />
+      <item itemvalue="Jest.Test forms module.Test mapFormComponents" />
+      <item itemvalue="Jest.Test forms module.Test mapQuestions" />
+      <item itemvalue="Jest.Test forms module.Test makeFormGroupKeys" />
+      <item itemvalue="Jest.Test forms module.Test formsFactory" />
+    </list>
+    <recent_temporary>
+      <list>
+        <item itemvalue="Jest.Test forms module.Test formsFactory" />
+        <item itemvalue="Jest.Test forms module.Test makeFormGroupKeys" />
+        <item itemvalue="Jest.Test forms module.Test mapQuestions" />
+        <item itemvalue="Jest.Test forms module.Test mapFormComponents" />
+        <item itemvalue="Jest.Test forms module.Test makeFormGroup" />
+      </list>
+    </recent_temporary>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -36,23 +144,25 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1612991144270</updated>
-      <workItem from="1612991146759" duration="1291000" />
+      <workItem from="1612991146759" duration="8985000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
-  <component name="XDebuggerManager">
-    <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="javascript">
-          <url>file://$PROJECT_DIR$/src/modules/forms/forms.tsx</url>
-          <line>77</line>
-          <properties lambdaOrdinal="-1" />
-          <option name="timeStamp" value="2" />
-        </line-breakpoint>
-      </breakpoints>
-    </breakpoint-manager>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/bluecollar_react_base$Test_forms_module_Test_mapFormComponents.info" NAME="Test forms module.Test mapFormComponents Coverage Results" MODIFIED="1613040388670" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="JestJavaScriptTestRunnerCoverage" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" />
   </component>
 </project>

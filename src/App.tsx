@@ -21,7 +21,7 @@ export const App = (): JSX.Element => {
 
   const onSubmit = (values: any) => {
     console.log(values);
-    alert(JSON.stringify(values));
+    // alert(JSON.stringify(values));
     return;
   };
 

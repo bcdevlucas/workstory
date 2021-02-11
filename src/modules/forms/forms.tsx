@@ -16,15 +16,26 @@ interface FormWrapperProps {
   label: string;
 }
 
-const labelToId = (text: string) => text.replace(/([A-Za-z])/g, "$1");
+export const labelToId = (text: string) => text
+  .replace(/([^A-Za-z0-9])/g, '_').toLowerCase()
+  .replace(/^_|_*$/g, '');
+
 // TODO: If we make the key value undefined which is preferable, we have to provide a text default to dropdowns....
-const makeFormPair = (id: string) => ({[id]: ''});
-const makeFormPairs = (labels: string[]) =>
+export const makeFormPair = (id: string) => ({[id]: ''});
+export const makeFormPairs = (labels: string[]) =>
   labels.map((l) => makeFormPair(labelToId(l)));
-const makeFormGroup = (formPairs: ReturnType<typeof makeFormPairs>) =>
+export const makeFormGroup = (formPairs: ReturnType<typeof makeFormPairs>) =>
   formPairs.reduce((acc, cur) => ({...acc, ...cur}), {});
 
-const MakeSelectBox = (
+export const MakeTextInput: FormInputFactoryType = (props: BaseInputProps = {
+  value: "",
+  placeholder: "",
+  label: "",
+  options: []
+}) => {
+  return <TextInput {...(props as any)} />;
+};
+export const MakeSelectBox = (
 props: BaseInputProps = {
   value: "",
   placeholder: "",
@@ -32,7 +43,7 @@ props: BaseInputProps = {
   options: []
 }): ReactElement => <SelectDropdown {...(props as any)} />;
 
-const mapFormComponents = (type: ConfigFormFieldType) => {
+export const mapFormComponents = (type: ConfigFormFieldType) => {
   const componentToFormInputMap: Record<ConfigFormFieldType,
   FormInputFactoryType> = {
     text: MakeTextInput,
@@ -42,7 +53,7 @@ const mapFormComponents = (type: ConfigFormFieldType) => {
   return componentToFormInputMap[type];
 };
 
-const mapQuestions = (questions: Question[]) =>
+export const mapQuestions = (questions: Question[]) =>
   questions.map((question) => {
     const titleComponent = (
       <Typography key={question.title} variant="h4">{question.title}</Typography>
@@ -55,20 +66,11 @@ const mapQuestions = (questions: Question[]) =>
     return [titleComponent, ...formComponents];
   });
 
-const MakeTextInput: FormInputFactoryType = (props: BaseInputProps = {
-  value: "",
-  placeholder: "",
-  label: "",
-  options: []
-}) => {
-  return <TextInput {...(props as any)} />;
-};
-
-const makeFormGroupKeys = (questions: Question[]) =>
+export const makeFormGroupKeys = (questions: Question[]) =>
   questions.map((question) =>
     makeFormGroup(makeFormPairs(question.fields.map((field) => field.name))));
 
-function formsFactory(data: { questions: Question[] }) {
+export function formsFactory(data: { questions: Question[] }) {
   const {questions} = data;
 
   const formComponents = mapQuestions(questions).reduce((a, b) => [...a, ...b], []);
