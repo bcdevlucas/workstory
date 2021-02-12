@@ -6,13 +6,14 @@ import {BaseInputProps} from './models/forms.model';
 import {Typography} from '@material-ui/core';
 import {Formik, Form} from 'formik';
 import SubmitButton from './components/submit-button';
+import {FormikHelpers} from 'formik/dist/types';
 
 type FormInputFactoryType = (props: BaseInputProps) => ReactElement<typeof SelectDropdown | typeof TextInput>;
 
 type ConfigFormFieldType = "text" | "dropdown";
 
 interface FormWrapperProps {
-  onSubmit: (values: any) => void;
+  onSubmit: (values: any, formikHelpers: any) => void | Promise<any>;
   label: string;
 }
 
@@ -88,7 +89,7 @@ const formBuilder = (data: { questions: Question[] }) => {
 
   return (props: FormWrapperProps) => (
     <Formik onSubmit={props.onSubmit} initialValues={formGroup}>
-      {({handleSubmit}): ReactNode => (
+      {({handleSubmit }): ReactNode => (
       <>
         <Form className={"form-wrapper"} onSubmit={handleSubmit} noValidate>
           {formComponents}

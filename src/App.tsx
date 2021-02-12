@@ -7,6 +7,7 @@ import {formBuilder} from './modules/forms/forms';
 import {Question} from './core/models/question.model';
 
 import './App.scss';
+import {FormikHelpers} from 'formik/dist/types';
 
 export const App = (): JSX.Element => {
   const [formData, setFormData] = useState<{ questions: any[] }>();
@@ -19,10 +20,9 @@ export const App = (): JSX.Element => {
   }, []);
 
 
-  const onSubmit = (values: any) => {
+  const onSubmit = (values: any, helpers: FormikHelpers<any>) => {
     console.log(values);
-    // alert(JSON.stringify(values));
-    return;
+    helpers.resetForm();
   };
 
   if (!formData) {
